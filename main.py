@@ -10,6 +10,11 @@ import json
 import requests
 from urllib.parse import urlencode
 import numpy as np
+from functions.analises import montar_contexto_mercado
+from functions.candles import pegar_candlesticks
+from functions.ia import analisar_mercado
+from functions.ticker import obter_ticker
+from functions.orderbook import obter_orderbook
 
 
 df_candles = pegar_candlesticks("btcbrl", "1m", "10")
